@@ -1,8 +1,20 @@
 const express = require('express')
 const exphbs = require('express-handlebars')
-const PORT = 3001
+const mongoose = require('mongoose')
+const SW = require('./model/sw')
+const PORT = 3000
 
 const app = express()
+
+mongoose.connect('mongodb://localhost/SW', { useNewUrlParser: true, useUnifiedTopology: true })
+const db = mongoose.connection
+
+db.on('error', () => {
+  console.log('mongoDB error!')
+})
+db.once('open', () => {
+  console.log('mongoDB connected!')
+})
 
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
@@ -10,7 +22,10 @@ app.set('view engine', 'handlebars')
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-  res.render('index')
+  SW.find()
+    .lean()
+    .then(data => res.render('index', { data }))
+    .catch(error => { console.log(error) })
 })
 
 
