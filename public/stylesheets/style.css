@@ -1,6 +1,6 @@
 .monster {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   border-radius: 99px;
 }
 
@@ -16,5 +16,9 @@
 
 .btn {
   width: 40px;
+}
+
+table {
+  font-family: monospace;
 }
 

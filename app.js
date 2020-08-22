@@ -41,7 +41,7 @@ app.get('/:attribute', (req, res) => {
 app.get('/type/:type', (req, res) => {
   const type = req.params.type
   SW.find({ type: type })
-    .sort({ artifact_type: 'desc' })
+    .sort({ attribute: 'desc', grade: 'desc', artifact_type: 'desc' })
     .lean()
     .then(data => res.render('index', { data }))
     .catch(error => console.log(error))
