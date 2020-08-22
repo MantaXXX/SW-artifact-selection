@@ -21,13 +21,13 @@
   <table class="table table-hover table-sm">
     <thead class="thead-dark">
       <tr>
-        <th class="border">Monster</th>
-        <th class="border">Type</th>
-        <th class="border">Skill 1</th>
-        <th class="border">Skill 2</th>
-        <th class="border">Skill 3</th>
-        <th class="border">Skill 4</th>
-        <th class="border">Attribute</th>
+        <th class="border" style="width: 180px">Monster</th>
+        <th class="border" style="width: 50px">Type</th>
+        <th class="border" style="width: 120px">Skill 1</th>
+        <th class="border" style="width: 120px">Skill 2</th>
+        <th class="border" style="width: 80px">Skill 3</th>
+        <th class="border" style="width: 60px;">Skill 4</th>
+        <th class="border" style="width: 80px">Attribute</th>
         <th class="border">Other</th>
       </tr>
     </thead>
@@ -35,7 +35,8 @@
 
       {{#each data}}
       <tr>
-        <th style="vertical-align: middle;"><img src="{{ this.img }}" class="monster mr-3">{{ this.name }}</th>
+        <th style="vertical-align: middle;"><img src="{{ this.img }}" class="monster mr-3">{{ this.name }}
+        </th>
         <td style="vertical-align: middle;">{{ this.artifact_type }}</td>
         <td style="vertical-align: middle;">{{ this.skill_1 }}</td>
         <td style="vertical-align: middle;">{{ this.skill_2 }}</td>
