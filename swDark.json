@@ -561,34 +561,6 @@
       "artifact_other": "合擊"
     },
     {
-      "name": "Kro",
-      "img": "https://summonerswarskyarena.info/wp-content/uploads/2019/06/unit_icon_0051_4_3.png",
-      "grade": "3",
-      "type": "atk",
-      "attribute": "dark",
-      "artifact_type": "攻",
-      "skill_1": "命中",
-      "skill_2": "",
-      "skill_3": "爆傷",
-      "skill_4": "",
-      "artifact_attribute": "",
-      "artifact_other": "合擊"
-    },
-    {
-      "name": "Miho",
-      "img": "https://summonerswarskyarena.info/wp-content/uploads/2019/12/unit_icon_0053_4_2.png",
-      "grade": "3",
-      "type": "atk",
-      "attribute": "dark",
-      "artifact_type": "攻",
-      "skill_1": "爆傷 恢復 命中",
-      "skill_2": "爆傷 命中",
-      "skill_3": "",
-      "skill_4": "",
-      "artifact_attribute": "",
-      "artifact_other": "反擊、「失去體力」攻"
-    },
-    {
       "name": "Miho",
       "img": "https://summonerswarskyarena.info/wp-content/uploads/2019/12/unit_icon_0053_4_2.png",
       "grade": "3",
@@ -615,20 +587,6 @@
       "skill_4": "",
       "artifact_attribute": "",
       "artifact_other": ""
-    },
-    {
-      "name": "Zinc",
-      "img": "https://summonerswarskyarena.info/wp-content/uploads/2017/01/Zinc_Icon.png",
-      "grade": "3",
-      "type": "def",
-      "attribute": "dark",
-      "artifact_type": "",
-      "skill_1": "",
-      "skill_2": "命中",
-      "skill_3": "命中",
-      "skill_4": "",
-      "artifact_attribute": "",
-      "artifact_other": ""
-    },
+    }
   ]
 }

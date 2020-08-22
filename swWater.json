@@ -110,7 +110,7 @@
       "skill_3": "爆傷 命中",
       "skill_4": "",
       "artifact_attribute": "",
-      "artifact_other": "速buff"
+      "artifact_other": "速buff、反擊"
     },
     {
       "name": "Beth",
@@ -632,7 +632,7 @@
     },
     {
       "name": "Rina",
-      "img": "https://summonerswarskyarena.info/wp-content/uploads/2015/10/Tractor-Water.png",
+      "img": "https://summonerswarskyarena.info/wp-content/uploads/2016/12/Rina_Icon.png",
       "grade": "3",
       "type": "support",
       "attribute": "water",

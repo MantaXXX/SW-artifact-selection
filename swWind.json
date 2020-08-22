@@ -562,7 +562,7 @@
     },
     {
       "name": "Mav",
-      "img": "https://summonerswarskyarena.info/wp-content/uploads/2016/12/Copper_Icon.png",
+      "img": "https://summonerswarskyarena.info/wp-content/uploads/2015/03/Mav-Wind.png",
       "grade": "3",
       "type": "HP",
       "attribute": "wind",
@@ -576,7 +576,7 @@
     },
     {
       "name": "Ramagos",
-      "img": "https://summonerswarskyarena.info/wp-content/uploads/2016/12/Copper_Icon.png",
+      "img": "https://summonerswarskyarena.info/wp-content/uploads/2019/06/unit_icon_0051_2_2.png",
       "grade": "2",
       "type": "HP",
       "attribute": "wind",
@@ -587,6 +587,6 @@
       "skill_4": "",
       "artifact_attribute": "",
       "artifact_other": "防buff"
-    },
+    }
   ]
 }

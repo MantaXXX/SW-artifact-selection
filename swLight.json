@@ -180,25 +180,11 @@
       "skill_3": "恢復",
       "skill_4": "",
       "artifact_attribute": "",
-      "artifact_other": ""
-    },
-    {
-      "name": "Iris",
-      "img": "https://summonerswarskyarena.info/wp-content/uploads/2015/07/Iris-Light.png",
-      "grade": "4",
-      "type": "atk",
-      "attribute": "light",
-      "artifact_type": "攻",
-      "skill_1": "",
-      "skill_2": "爆傷 命中",
-      "skill_3": "恢復",
-      "skill_4": "",
-      "artifact_attribute": "",
       "artifact_other": "「追加傷害」體"
     },
     {
       "name": "Lucas",
-      "img": "https://summonerswarskyarena.info/wp-content/uploads/2015/07/Iris-Light.png",
+      "img": "https://summonerswarskyarena.info/wp-content/uploads/2015/08/Lucas-Light.png",
       "grade": "4",
       "type": "atk",
       "attribute": "light",
@@ -268,7 +254,7 @@
     },
     {
       "name": "Lusha",
-      "img": "",
+      "img": "https://summonerswarskyarena.info/wp-content/uploads/2019/06/unit_icon_0051_3_2.png",
       "grade": "3",
       "type": "HP",
       "attribute": "light",
@@ -282,7 +268,7 @@
     },
     {
       "name": "Teon",
-      "img": "",
+      "img": "https://summonerswarskyarena.info/wp-content/uploads/2018/06/Teon_Icon.png",
       "grade": "3",
       "type": "support",
       "attribute": "light",
@@ -296,7 +282,7 @@
     },
     {
       "name": "Belladeon",
-      "img": "",
+      "img": "https://summonerswarskyarena.info/wp-content/uploads/2019/06/unit_icon_0051_3_3.png",
       "grade": "3",
       "type": "def",
       "attribute": "light",
@@ -377,6 +363,6 @@
       "skill_4": "",
       "artifact_attribute": "",
       "artifact_other": "攻buff"
-    },
+    }
   ]
 }

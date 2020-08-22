@@ -7,15 +7,15 @@
       <option value="">防禦</option>
     </select>
 
-    <i class="fas fa-fire"></i>
-    <i class="fas fa-tint mx-3"></i>
-    <i class="fas fa-wind"></i>
-    <i class="far fa-sun mx-3"></i>
-    <i class="fas fa-moon mr-5"></i>
-    <i class=" fas fa-user-ninja mx-3"></i>
-    <i class="fas fa-users"></i>
-    <i class="fas fa-user-shield mx-3"></i>
-    <i class="fas fa-user-plus"></i>
+    <a href="/fire"><i class="fas fa-fire"></i></a>
+    <a href="/water"><i class="fas fa-tint mx-3"></i></a>
+    <a href="/wind"><i class="fas fa-wind"></i></a>
+    <a href="/light"><i class="far fa-sun mx-3"></i></a>
+    <a href="/dark"><i class="fas fa-moon mr-5"></i></a>
+    <a href="/atk"><i class=" fas fa-user-ninja mx-3"></i></a>
+    <a href="/hp"><i class="fas fa-users"></i></a>
+    <a href="/def"><i class="fas fa-user-shield mx-3"></i></a>
+    <a href="/support"><i class="fas fa-user-plus"></i>
   </div>
 
   <table class="table table-hover table-sm">
@@ -35,14 +35,14 @@
 
       {{#each data}}
       <tr>
-        <th><img src="{{ this.img }}" class="monster">{{ this.name }}</th>
-        <td>{{ this.artifact_type }}</td>
-        <td>{{ this.skill_1 }}</td>
-        <td>{{ this.skill_2 }}</td>
-        <td>{{ this.skill_3 }}</td>
-        <td>{{ this.skill_4 }}</td>
-        <td>{{ this.artifact_attribute }}</td>
-        <td>{{ this.artifact_other }}</td>
+        <th style="vertical-align: middle;"><img src="{{ this.img }}" class="monster mr-3">{{ this.name }}</th>
+        <td style="vertical-align: middle;">{{ this.artifact_type }}</td>
+        <td style="vertical-align: middle;">{{ this.skill_1 }}</td>
+        <td style="vertical-align: middle;">{{ this.skill_2 }}</td>
+        <td style="vertical-align: middle;">{{ this.skill_3 }}</td>
+        <td style="vertical-align: middle;">{{ this.skill_4 }}</td>
+        <td style="vertical-align: middle;">{{ this.artifact_attribute }}</td>
+        <td style="vertical-align: middle;">{{ this.artifact_other }}</td>
       </tr>
       {{/each}}
 

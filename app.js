@@ -23,9 +23,19 @@ app.use(express.static('public'))
 
 app.get('/', (req, res) => {
   SW.find()
+    .sort({ attribute: 'desc', grade: 'desc', artifact_type: 'desc' })
     .lean()
     .then(data => res.render('index', { data }))
     .catch(error => { console.log(error) })
+})
+
+app.get('/:type', (req, res) => {
+  const attribute = req.params.type
+  SW.find({ attribute: attribute })
+    .sort({ artifact_type: 'desc' })
+    .lean()
+    .then(data => res.render('index', { data }))
+    .catch(error => console.log(error))
 })
 
 
