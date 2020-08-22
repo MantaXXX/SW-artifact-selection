@@ -1,15 +1,8 @@
-const mongoose = require('mongoose')
+const db = require('../../config/mongoose')
 const SW = require('../sw')
 const swWind = require('../../swWind.json').results
 
-mongoose.connect('mongodb://localhost/SW', { useNewUrlParser: true, useUnifiedTopology: true })
-const db = mongoose.connection
-
-db.on('error', () => {
-  console.log('mongoDB error!')
-})
 db.once('open', () => {
-  console.log('mongoDB connected!')
   swWind.forEach(data => {
     SW.create({
       name: `${data.name}`,
