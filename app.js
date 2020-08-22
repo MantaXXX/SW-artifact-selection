@@ -38,6 +38,15 @@ app.get('/:attribute', (req, res) => {
     .catch(error => console.log(error))
 })
 
+app.get('/type/:type', (req, res) => {
+  const type = req.params.type
+  SW.find({ type: type })
+    .sort({ artifact_type: 'desc' })
+    .lean()
+    .then(data => res.render('index', { data }))
+    .catch(error => console.log(error))
+})
+
 
 app.listen(PORT, () => {
   console.log(`App is running on http://localhost:${PORT}`)
