@@ -1,7 +1,7 @@
 const express = require('express')
 const exphbs = require('express-handlebars')
 const mongoose = require('mongoose')
-const SW = require('./model/sw')
+const routes = require('./routes')
 const PORT = 3000
 
 const app = express()
@@ -20,32 +20,8 @@ app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
 
 app.use(express.static('public'))
+app.use(routes)
 
-app.get('/', (req, res) => {
-  SW.find()
-    .sort({ attribute: 'desc', grade: 'desc', artifact_type: 'desc' })
-    .lean()
-    .then(data => res.render('index', { data }))
-    .catch(error => { console.log(error) })
-})
-
-app.get('/:attribute', (req, res) => {
-  const attribute = req.params.attribute
-  SW.find({ attribute: attribute })
-    .sort({ artifact_type: 'desc' })
-    .lean()
-    .then(data => res.render('index', { data }))
-    .catch(error => console.log(error))
-})
-
-app.get('/type/:type', (req, res) => {
-  const type = req.params.type
-  SW.find({ type: type })
-    .sort({ attribute: 'desc', grade: 'desc', artifact_type: 'desc' })
-    .lean()
-    .then(data => res.render('index', { data }))
-    .catch(error => console.log(error))
-})
 
 
 app.listen(PORT, () => {
