@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/SW'
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+const MONGOLAB_PURPLE_URI = process.env.MONGOLAB_PURPLE_URI || 'mongodb://localhost/SW'
+mongoose.connect(MONGOLAB_PURPLE_URI, { useNewUrlParser: true, useUnifiedTopology: true })
 const db = mongoose.connection
 
 db.on('error', () => {
