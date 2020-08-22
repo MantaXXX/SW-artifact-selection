@@ -29,15 +29,14 @@ app.get('/', (req, res) => {
     .catch(error => { console.log(error) })
 })
 
-app.get('/:type', (req, res) => {
-  const attribute = req.params.type
+app.get('/:attribute', (req, res) => {
+  const attribute = req.params.attribute
   SW.find({ attribute: attribute })
     .sort({ artifact_type: 'desc' })
     .lean()
     .then(data => res.render('index', { data }))
     .catch(error => console.log(error))
 })
-
 
 
 app.listen(PORT, () => {
