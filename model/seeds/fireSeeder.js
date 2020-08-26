@@ -19,6 +19,5 @@ db.once('open', () => {
       artifact_other: `${data.artifact_other}`,
     })
   })
-  console.log('Done!')
+  console.log('FireData created!')
 })
-

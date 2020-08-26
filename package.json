@@ -6,11 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "fireSeed": "node model/seeds/fireSeeder.js",
-    "waterSeed": "node model/seeds/waterSeeder.js",
-    "windSeed": "node model/seeds/windSeeder.js",
-    "lightSeed": "node model/seeds/lightSeeder.js",
-    "darkSeed": "node model/seeds/darkSeeder.js",
+    "seed": "node model/seeds/fireSeeder.js & node model/seeds/waterSeeder.js & node model/seeds/windSeeder.js & node model/seeds/lightSeeder.js & node model/seeds/darkSeeder.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
