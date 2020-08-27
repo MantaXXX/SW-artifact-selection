@@ -40,7 +40,7 @@
       "skill_3": "爆傷 恢復",
       "skill_4": "",
       "artifact_attribute": "",
-      "artifact_other": "攻buff"
+      "artifact_other": "攻buff、反擊"
     },
     {
       "name": "Juno",
@@ -105,8 +105,8 @@
       "type": "atk",
       "attribute": "fire",
       "artifact_type": "攻",
-      "skill_1": "爆傷",
-      "skill_2": "爆傷",
+      "skill_1": "",
+      "skill_2": "命中",
       "skill_3": "爆傷",
       "skill_4": "",
       "artifact_attribute": "",
@@ -121,7 +121,7 @@
       "artifact_type": "攻",
       "skill_1": "爆傷",
       "skill_2": "爆傷 命中",
-      "skill_3": "爆傷 命中",
+      "skill_3": "命中",
       "skill_4": "",
       "artifact_attribute": "",
       "artifact_other": ""
@@ -194,7 +194,7 @@
       "skill_3": "爆傷",
       "skill_4": "",
       "artifact_attribute": "",
-      "artifact_other": ""
+      "artifact_other": "「追加傷害」攻"
     },
     {
       "name": "Masha",
@@ -301,9 +301,9 @@
       "type": "atk",
       "attribute": "fire",
       "artifact_type": "攻",
-      "skill_1": "爆傷",
-      "skill_2": "爆傷",
-      "skill_3": "",
+      "skill_1": "",
+      "skill_2": "",
+      "skill_3": "命中",
       "skill_4": "",
       "artifact_attribute": "",
       "artifact_other": ""
